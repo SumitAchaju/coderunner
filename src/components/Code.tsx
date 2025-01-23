@@ -42,7 +42,7 @@ function Code({}: Props) {
         <div className="text-white font-semibold flex items-center gap-2">
           <span className="block">Code: </span>
           <div
-            className={`block w-2 h-2  rounded-full ${
+            className={`block w-3 h-3  rounded-full ${
               socket?.isConnected ? "bg-green-500" : "bg-red-500"
             }`}
           ></div>
@@ -65,6 +65,7 @@ function Code({}: Props) {
           readOnly: isRunning,
           readOnlyMessage: { value: "Stop code to edit..." },
           scrollBeyondLastLine: false,
+          fontSize: 18,
         }}
       />
     </div>

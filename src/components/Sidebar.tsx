@@ -8,7 +8,7 @@ type Props = {};
 
 function Sidebar({}: Props) {
   return (
-    <div className="w-[60px] flex flex-col gap-2 p-4 items-center">
+    <div className="w-[70px] flex flex-col gap-2 p-4 items-center">
       {sideBarLanguage.map((language) => (
         <SidebarIcon
           key={language.name}
@@ -41,7 +41,7 @@ export const SidebarIcon = ({ Icon, language }: SidebarIconProps) => {
   return (
     <div className="tooltip tooltip-right" data-tip={language}>
       <button
-        className={`block w-10 h-10 p-2 rounded-xl ${
+        className={`block w-12 h-12 p-2 rounded-xl ${
           language === activeLanguage ? "bg-[#374151]" : "bg-base-100"
         }`}
         onClick={() => {

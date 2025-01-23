@@ -50,6 +50,7 @@ function Output({}: Props) {
           scrollBeyondLastLine: false,
           automaticLayout: true,
           readOnlyMessage: { value: "Run code to take input..." },
+          fontSize: 18,
         }}
         onMount={(editor, monaco) => {
           // block cursor movement with mouse

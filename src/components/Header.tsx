@@ -23,7 +23,7 @@ function Header({}: Props) {
   const inputRef = useContext(InputContext);
   return (
     <div className="navbar bg-base-100">
-      <div className="flex-1 items-center gap-1">
+      <div className="flex-1 items-center gap-3">
         <div className="rounded-full shrink-0 md:w-10 md:h-10 w-8 h-8">
           <img
             className="w-full h-full object-cover"
@@ -31,7 +31,7 @@ function Header({}: Props) {
             alt="brand logo"
           />
         </div>
-        <Link to={"/"} className="md:text-xl font-bold text-lg">
+        <Link to={"/"} className="md:text-2xl font-bold text-xl">
           Sumit Achaju
         </Link>
       </div>

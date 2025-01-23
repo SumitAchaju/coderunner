@@ -6,7 +6,7 @@ type Props = {};
 
 const Home = ({}: Props) => {
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col text-lg">
       <Header />
       <div className="flex grow">
         <Sidebar />

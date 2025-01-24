@@ -1,5 +1,5 @@
 export const fontConfig = {
   fontFamily: "Cascadia Code",
-  fontSize: 17,
+  fontSize: 16,
   lineHeight: 1.5,
 };

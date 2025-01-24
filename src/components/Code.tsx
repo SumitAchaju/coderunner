@@ -67,6 +67,7 @@ function Code({}: Props) {
           readOnlyMessage: { value: "Stop code to edit..." },
           scrollBeyondLastLine: false,
           ...fontConfig,
+          minimap: { enabled: false },
         }}
       />
     </div>

@@ -80,7 +80,9 @@ function Output({}: Props) {
             // handle ctrl + backspace
             if (event.keyCode === monaco.KeyCode.Backspace && event.ctrlKey) {
               if (inputRef.current) {
-                inputRef.current = inputRef.current.replace(/\w+$/, "");
+                inputRef.current = inputRef.current
+                  .trimEnd()
+                  .replace(/\w+$/, "");
                 return;
               }
               stopDefault();

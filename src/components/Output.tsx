@@ -3,6 +3,7 @@ import { useStore } from "../store/store";
 import { useContext, useEffect, useRef } from "react";
 import InputContext from "../context/inputContext";
 import SocketContext from "../context/socketContext";
+import { fontConfig } from "../constants/editorConfig";
 
 type Props = {};
 
@@ -50,7 +51,7 @@ function Output({}: Props) {
           scrollBeyondLastLine: false,
           automaticLayout: true,
           readOnlyMessage: { value: "Run code to take input..." },
-          fontSize: 18,
+          ...fontConfig,
         }}
         onMount={(editor, monaco) => {
           // block cursor movement with mouse

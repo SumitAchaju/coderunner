@@ -3,6 +3,7 @@ import { useStore } from "../store/store";
 import { useContext } from "react";
 import SocketContext from "../context/socketContext";
 import InputContext from "../context/inputContext";
+import { fontConfig } from "../constants/editorConfig";
 
 type Props = {};
 
@@ -65,7 +66,7 @@ function Code({}: Props) {
           readOnly: isRunning,
           readOnlyMessage: { value: "Stop code to edit..." },
           scrollBeyondLastLine: false,
-          fontSize: 18,
+          ...fontConfig,
         }}
       />
     </div>
